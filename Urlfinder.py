@@ -29,7 +29,7 @@ def checktumblr(url):
 def tumblr(lst):
     print('Urls available:')
     for x in range(len(lst)):
-        if checktumblr(lst[x]) == True:
+        if checktumblr(lst[x]):
             print(lst[x])
     print('************################Done################************')
 
@@ -37,7 +37,7 @@ def tumblrloop(lst):
     print('Urls available:')
     while(True):
         for x in range(len(lst)):
-            if checktumblr(lst[x]) == True:
+            if checktumblr(lst[x]):
                 print(lst[x])
     print('************################Done################************')
 
@@ -45,13 +45,13 @@ def tumblrloop(lst):
 def twitter(lst):
     print('Urls available:')
     for x in range(len(lst)):
-        if checktwitter(lst[x]) == True:
+        if checktwitter(lst[x]):
             print(lst[x])
     print('************################Done################************')
 
 def instagram(lst):
     print('Urls available:')
     for x in range(len(lst)):
-        if checkinstagram(lst[x]) == True:
+        if checkinstagram(lst[x]):
             print(lst[x])
     print('************################Done################************')

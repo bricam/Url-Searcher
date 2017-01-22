@@ -1,6 +1,6 @@
 # Url-Searcher
-A mass url searcher for tumblr/twitter/instagram
+A mass url searcher for tumblr/twitter/instagram.
 
-Python 3
+Combs through large lists of desirable urls and prints out any that are not currently in use.
 
-Requires Requests library
+Requires Python 3 and the Requests library.

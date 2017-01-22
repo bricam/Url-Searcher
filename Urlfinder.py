@@ -2,14 +2,17 @@ import urllib
 import re
 import urllib.request
 import requests
-print('Functions available: tumblr(), tumblrloop(), twitter(), instagram()')
-print('')
+
 #####################Lists#####################
 #Add string lists here
 
 
 
 #####################Functions#####################
+def main():
+    print('Functions available: tumblr(), tumblrloop(), twitter(), instagram()')
+    print('Tumblrloop calls the function over and over.')
+
 def checktwitter(url):
     r = requests.get("http://twitter.com/"+ url)
     if r.status_code == 404:
@@ -55,3 +58,9 @@ def instagram(lst):
         if checkinstagram(lst[x]):
             print(lst[x])
     print('************################Done################************')
+
+    
+if __name__ == "__main__":
+    main()
+
+    
